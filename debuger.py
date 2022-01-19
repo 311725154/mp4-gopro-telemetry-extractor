@@ -12,6 +12,11 @@ class Debuger():
         self.end_time = ""
 
     def print_to_console(self, string):
+        """
+        printing log message according to the string parameter
+        :param string: The message that the log reader wants to read
+        :return: void
+        """
         if "web-driver object created" in string:
             self.file_counter += 1
         self.log_string += string
